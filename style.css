@@ -1,0 +1,79 @@
+ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+    text-align: center;
+}
+
+/* Style for navigation list items */
+ul li {
+    display: inline; /* Display list items inline */
+    font-size: 25px;
+
+}
+
+/* Style for navigation links */
+ul li a {
+    text-decoration: none;
+    color: #333; /* Text color */
+    padding: 10px 15px; /* Add padding to create clickable area */
+    background-color: #f0f0f0; /* Background color */
+    border-radius: 5px; /* Add rounded corners */
+    margin-right: 5px; /* Add space between items */
+}
+
+/* Hover effect for the links */
+ul li a:hover {
+    background-color: #333; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+#content
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.inp
+{
+    padding: 10px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+div
+{
+    text-align: center;
+    margin-top: 40px;
+}
+div input
+{
+    padding: 10px 20px;
+    background-color: #4285f4; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+span
+{
+    margin: 0 15px 0 15px;
+}
+
+@media (max-width: 577px) {
+    ul {
+        flex-direction: column; /* Stack the items vertically */
+    }
+
+    ul li {
+        display: block; /* Display list items as blocks */
+        margin: 30px 0; /* Add vertical spacing */
+    }
+}
